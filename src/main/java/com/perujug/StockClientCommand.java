@@ -1,9 +1,12 @@
 package com.perujug;
 
 import io.micronaut.configuration.picocli.PicocliRunner;
+import picocli.CommandLine;
+import picocli.CommandLine.Command;
 
 import javax.inject.Inject;
 
+@Command
 public class StockClientCommand implements Runnable {
     @Inject
     private StockClient stockClient;
