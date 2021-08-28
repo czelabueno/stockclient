@@ -1,8 +1,8 @@
 micronaut:
   application:
     name: stockclient
-  http:
-    services:
-      stockclient:
-        urls:
-          http://localhost:8080/
+consul:
+  client:
+    defaultZone: ${CONSUL_HOST:localhost}:${CONSUL_PORT:8500}
+    registration:
+      enabled: true
