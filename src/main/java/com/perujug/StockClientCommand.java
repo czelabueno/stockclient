@@ -18,5 +18,11 @@ public class StockClientCommand implements Runnable {
     public void run() {
         System.out.println(stockClient.getStock("ORCL"));
         System.out.println(stockClient.getStock("MSFT"));
+        System.out.println(stockClient.getStock("ORCL"));
+        System.out.println(stockClient.getStock("GOOG"));
+        System.out.println(stockClient.getStock("ORCL"));
+        System.out.println(stockClient.getStock("GOOG"));
+        System.out.println(stockClient.getStock("ORCL"));
+        System.out.println(stockClient.getStock("MSFT"));
     }
 }
